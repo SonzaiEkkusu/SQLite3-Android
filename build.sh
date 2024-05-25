@@ -3,10 +3,10 @@
 set -e
 
 setup_ndk() {
-	wget -nv https://dl.google.com/android/repository/android-ndk-r25-linux.zip
-	unzip -qo android-ndk-r25-linux.zip
-	chmod -R 777 ./android-ndk-r25
-	export PATH="$(pwd)/android-ndk-r25:$PATH"
+	wget -nv https://dl.google.com/android/repository/android-ndk-r26d-linux.zip
+	unzip -qo android-ndk-r26d-linux.zip
+	chmod -R 777 ./android-ndk-r26d
+	export PATH="$(pwd)/android-ndk-r26d:$PATH"
 }
 
 if ! ndk-build --version; then setup_ndk; fi
